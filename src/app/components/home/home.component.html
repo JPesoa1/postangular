@@ -1,0 +1,18 @@
+<div *ngIf="objeto">
+    <table>
+        <thead>
+            <tr>
+                <th>NOMBRE</th>
+                <th>ESPECIE</th>
+                <th>IMAGEN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let object of objeto">
+                <th>{{object.name}}</th>
+                <th>{{object.species}}</th>
+                <th><img style="width: 150px;heifht: 150px;" src="{{object.image}}" /></th>
+            </tr>
+        </tbody>
+    </table>
+</div>
